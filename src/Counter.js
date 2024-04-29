@@ -81,7 +81,6 @@ function Counter() {
     const textToCopy = textRef.current.innerText;
     navigator.clipboard
       .writeText(textToCopy)
-      .then(() => alert("Copied to clipboard"))
       .catch((error) => console.error("Failed to copy:", error));
   };
 
